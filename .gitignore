@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data
+data/raw/*.csv
+data/processed/*.csv
+*.db
+*.sqlite
+
+# Models
+models/saved_models/*.pkl
+mlruns/
+mlflow.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports
+reports/*.html
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
