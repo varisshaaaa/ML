@@ -127,3 +127,8 @@ def health_check():
         "redis": "connected" if redis_client else "unavailable",
         "model": "loaded" if model else "not_loaded"
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
